@@ -1,19 +1,19 @@
 class Solution
 {
 public:
-    int minimumDifference(vector<int> &nums)
+    int minimumDifference(vector<int> &num)
     {
-        const int n = nums.size() / 2;
-        const int sum = accumulate(begin(nums), end(nums), 0);
+        const int n = num.size() / 2;
+        const int sum = accumulate(begin(num), end(num), 0);
         const int goal = sum / 2;
-        const vector<int> lNums(begin(nums), begin(nums) + n);
-        const vector<int> rNums(begin(nums) + n, end(nums));
+        const vector<int> lnum(begin(num), begin(num) + n);
+        const vector<int> rnum(begin(num) + n, end(num));
         int ans = INT_MAX;
         vector<vector<int>> lSums(n + 1);
         vector<vector<int>> rSums(n + 1);
 
-        dfs(lNums, 0, 0, 0, lSums);
-        dfs(rNums, 0, 0, 0, rSums);
+        dfs(lnum, 0, 0, 0, lSums);
+        dfs(rnum, 0, 0, 0, rSums);
 
         for (int lCount = 0; lCount <= n; ++lCount)
         {
