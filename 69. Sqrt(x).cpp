@@ -5,26 +5,26 @@ public:
     {
         int s = 0;
         int e = n;
-        long long int mid = s + (e - s) / 2;
+        long long int k = s + (e - s) / 2;
         long long int ans = -1;
         while (s <= e)
         {
-            long long int sq = mid * mid;
+            long long int sq = k * k;
             if (sq == n)
             {
-                return mid;
+                return k;
             }
             else if (sq < n)
             {
-                ans = mid;
-                s = mid + 1;
+                ans = k;
+                s = k + 1;
             }
             else
             {
-                e = mid - 1;
+                e = k - 1;
             }
 
-            mid = s + (e - s) / 2;
+            k = s + (e - s) / 2;
         }
         return ans;
     }
