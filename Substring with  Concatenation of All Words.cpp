@@ -6,6 +6,8 @@ public:
         if (s.empty() || words.empty())
             return {};
 
+
+
         const int k = words.size();
         const int n = words[0].length();
         vector<int> ans;
