@@ -14,6 +14,7 @@ public:
         unordered_map<string, int> count;
 
         for (const string &word : words)
+            
             ++count[word];
 
         for (int i = 0; i < s.length() - k * n + 1; ++i)
