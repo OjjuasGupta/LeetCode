@@ -24,6 +24,7 @@ private:
                 board[i][j] = c;
                 if (solve(board, s + 1))
                     return true;
+                    
                 board[i][j] = '.';
             }
 
