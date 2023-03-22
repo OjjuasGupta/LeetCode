@@ -11,9 +11,8 @@ public:
                 if (board[i][j] == '.')
                     continue;
                 const string c(1, board[i][j]);
-                if (!seen.insert(c + "@row" + to_string(i)).second ||
-                    !seen.insert(c + "@col" + to_string(j)).second ||
-                    !seen.insert(c + "@box" + to_string(i / 3) + to_string(j / 3))
+
+                if (!seen.insert(c + "@row" + to_string(i)).second || !seen.insert(c + "@col" + to_string(j)).second || !seen.insert(c + "@box" + to_string(i / 3) + to_string(j / 3))
                          .second)
                     return false;
             }
