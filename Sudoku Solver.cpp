@@ -33,8 +33,7 @@ private:
     bool isValid(vector<vector<char>> &board, int row, int col, char c)
     {
         for (int i = 0; i < 9; ++i)
-            if (board[i][col] == c || board[row][i] == c ||
-                board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] == c)
+            if (board[i][col] == c || board[row][i] == c || board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] == c)
                 return false;
         return true;
     }
