@@ -31,3 +31,6 @@ private:
             swap(nums[l++], nums[r--]);
     }
 };
+// @lc code=end
+
+// Path: Next Permutation.cpp
