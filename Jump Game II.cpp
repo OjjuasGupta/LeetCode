@@ -1,4 +1,4 @@
-//each element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at nums[i], you can jump to any nums[i + j]
+
 class Solution
 {
 public:
@@ -8,7 +8,7 @@ public:
         int end = 0;
         int farthest = 0;
 
-        // Implicit BFS
+        // Implicitly, the first element is visited
         for (int i = 0; i < nums.size() - 1; ++i)
         {
             farthest = max(farthest, i + nums[i]);
