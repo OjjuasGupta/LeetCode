@@ -1,6 +1,6 @@
 class Solution {
  public:
-  string shiftingLetters(string s, vector<vector<int>>& shifts) {
+  string shiftingLetters(string s, vector<vector<int>>& shifts) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
     int currShift = 0;
     vector<int> timeline(s.length() + 1);
 
