@@ -23,6 +23,7 @@ private:
         {
             if (used[i])
                 continue;
+                
             used[i] = true;
             path.push_back(nums[i]);
             dfs(nums, move(used), move(path), ans);
