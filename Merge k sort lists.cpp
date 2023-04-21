@@ -19,7 +19,9 @@ public:
             ListNode *minNode = minHeap.top();
             minHeap.pop();
             if (minNode->next)
+            
                 minHeap.push(minNode->next);
+
             curr->next = minNode;
             curr = curr->next;
         }
