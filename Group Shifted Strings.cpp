@@ -7,9 +7,11 @@ public:
         unordered_map<string, vector<string>> keyToStrings;
 
         for (const string &s : strings)
+
             keyToStrings[getKey(s)].push_back(s);
 
         for (const auto &[_, strings] : keyToStrings)
+        
             ans.push_back(strings);
 
         return ans;
