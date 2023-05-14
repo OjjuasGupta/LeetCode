@@ -15,10 +15,11 @@ public:
             ans.push_back(strings);
 
         return ans;
+        
     }
 
 private:
-    // "abc" -> "11" because diff(a, b) = 1 and diff(b, c) = 1
+    // "abc" -> "11" because here diff(a, b) = 1 and diff(b, c) = 1
     string getKey(const string &s)
     {
         string key;
