@@ -29,6 +29,7 @@ private:
 
             used[i] = true;
             path.push_back(nums[i]);
+            
             dfs(nums, move(used), move(path), ans);
             path.pop_back();
             used[i] = false;
